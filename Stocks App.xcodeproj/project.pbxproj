@@ -16,6 +16,7 @@
 		382B181A2A3633E600E8DF4D /* Stocks_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18192A3633E600E8DF4D /* Stocks_AppTests.swift */; };
 		382B18242A3633E600E8DF4D /* Stocks_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18232A3633E600E8DF4D /* Stocks_AppUITests.swift */; };
 		382B18262A3633E600E8DF4D /* Stocks_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18252A3633E600E8DF4D /* Stocks_AppUITestsLaunchTests.swift */; };
+		382B18372A3638F200E8DF4D /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18362A3638F200E8DF4D /* StockService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		382B181F2A3633E600E8DF4D /* Stocks AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stocks AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382B18232A3633E600E8DF4D /* Stocks_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks_AppUITests.swift; sourceTree = "<group>"; };
 		382B18252A3633E600E8DF4D /* Stocks_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		382B18362A3638F200E8DF4D /* StockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				382B180C2A3633E600E8DF4D /* Persistence.swift */,
+				382B18362A3638F200E8DF4D /* StockService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -299,6 +302,7 @@
 				382B18062A3633E500E8DF4D /* ContentView.swift in Sources */,
 				382B18102A3633E600E8DF4D /* Stocks_App.xcdatamodeld in Sources */,
 				382B18042A3633E500E8DF4D /* Stocks_AppApp.swift in Sources */,
+				382B18372A3638F200E8DF4D /* StockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +492,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Stocks App/Preview Content\"";
 				DEVELOPMENT_TEAM = CS7P9L74D4;
 				ENABLE_PREVIEWS = YES;
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "API_KEY=$(API_KEY)";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
