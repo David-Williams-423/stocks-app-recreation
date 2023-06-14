@@ -11,12 +11,18 @@
 		382B18062A3633E500E8DF4D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18052A3633E500E8DF4D /* ContentView.swift */; };
 		382B18082A3633E600E8DF4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382B18072A3633E600E8DF4D /* Assets.xcassets */; };
 		382B180B2A3633E600E8DF4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382B180A2A3633E600E8DF4D /* Preview Assets.xcassets */; };
-		382B180D2A3633E600E8DF4D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B180C2A3633E600E8DF4D /* Persistence.swift */; };
 		382B18102A3633E600E8DF4D /* Stocks_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 382B180E2A3633E600E8DF4D /* Stocks_App.xcdatamodeld */; };
 		382B181A2A3633E600E8DF4D /* Stocks_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18192A3633E600E8DF4D /* Stocks_AppTests.swift */; };
 		382B18242A3633E600E8DF4D /* Stocks_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18232A3633E600E8DF4D /* Stocks_AppUITests.swift */; };
 		382B18262A3633E600E8DF4D /* Stocks_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18252A3633E600E8DF4D /* Stocks_AppUITestsLaunchTests.swift */; };
 		382B18372A3638F200E8DF4D /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18362A3638F200E8DF4D /* StockService.swift */; };
+		3882376C2A366D090019A86A /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882376B2A366D090019A86A /* CellView.swift */; };
+		3882376E2A3679440019A86A /* SecondaryDailyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882376D2A3679440019A86A /* SecondaryDailyInfo.swift */; };
+		38911A102A37C16C00347B59 /* CellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38911A0F2A37C16C00347B59 /* CellViewModel.swift */; };
+		38911A122A37C27900347B59 /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38911A112A37C27900347B59 /* Stock.swift */; };
+		38911A142A3A161700347B59 /* FinancialFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38911A132A3A161700347B59 /* FinancialFormatting.swift */; };
+		38911A162A3A257800347B59 /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38911A152A3A257800347B59 /* GraphView.swift */; };
+		38911A182A3A514900347B59 /* GraphViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38911A172A3A514900347B59 /* GraphViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +48,6 @@
 		382B18052A3633E500E8DF4D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		382B18072A3633E600E8DF4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		382B180A2A3633E600E8DF4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		382B180C2A3633E600E8DF4D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		382B180F2A3633E600E8DF4D /* Stocks_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stocks_App.xcdatamodel; sourceTree = "<group>"; };
 		382B18152A3633E600E8DF4D /* Stocks AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stocks AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		382B18192A3633E600E8DF4D /* Stocks_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks_AppTests.swift; sourceTree = "<group>"; };
@@ -50,6 +55,13 @@
 		382B18232A3633E600E8DF4D /* Stocks_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks_AppUITests.swift; sourceTree = "<group>"; };
 		382B18252A3633E600E8DF4D /* Stocks_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		382B18362A3638F200E8DF4D /* StockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockService.swift; sourceTree = "<group>"; };
+		3882376B2A366D090019A86A /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		3882376D2A3679440019A86A /* SecondaryDailyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryDailyInfo.swift; sourceTree = "<group>"; };
+		38911A0F2A37C16C00347B59 /* CellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellViewModel.swift; sourceTree = "<group>"; };
+		38911A112A37C27900347B59 /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		38911A132A3A161700347B59 /* FinancialFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialFormatting.swift; sourceTree = "<group>"; };
+		38911A152A3A257800347B59 /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		38911A172A3A514900347B59 /* GraphViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,7 @@
 				382B18332A36353100E8DF4D /* View Models */,
 				382B18352A36355400E8DF4D /* Services */,
 				382B18342A36353900E8DF4D /* Models */,
+				38911A192A3A5D7200347B59 /* Utils */,
 				382B18072A3633E600E8DF4D /* Assets.xcassets */,
 				382B180E2A3633E600E8DF4D /* Stocks_App.xcdatamodeld */,
 				382B18092A3633E600E8DF4D /* Preview Content */,
@@ -141,6 +154,8 @@
 			isa = PBXGroup;
 			children = (
 				382B18052A3633E500E8DF4D /* ContentView.swift */,
+				3882376B2A366D090019A86A /* CellView.swift */,
+				38911A152A3A257800347B59 /* GraphView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -148,6 +163,8 @@
 		382B18332A36353100E8DF4D /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				38911A0F2A37C16C00347B59 /* CellViewModel.swift */,
+				38911A172A3A514900347B59 /* GraphViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -155,6 +172,8 @@
 		382B18342A36353900E8DF4D /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3882376D2A3679440019A86A /* SecondaryDailyInfo.swift */,
+				38911A112A37C27900347B59 /* Stock.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,10 +181,17 @@
 		382B18352A36355400E8DF4D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				382B180C2A3633E600E8DF4D /* Persistence.swift */,
 				382B18362A3638F200E8DF4D /* StockService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		38911A192A3A5D7200347B59 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				38911A132A3A161700347B59 /* FinancialFormatting.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +258,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					382B17FF2A3633E500E8DF4D = {
 						CreatedOnToolsVersion = 14.3;
@@ -298,10 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				382B180D2A3633E600E8DF4D /* Persistence.swift in Sources */,
+				38911A102A37C16C00347B59 /* CellViewModel.swift in Sources */,
+				3882376E2A3679440019A86A /* SecondaryDailyInfo.swift in Sources */,
+				38911A122A37C27900347B59 /* Stock.swift in Sources */,
 				382B18062A3633E500E8DF4D /* ContentView.swift in Sources */,
+				3882376C2A366D090019A86A /* CellView.swift in Sources */,
+				38911A182A3A514900347B59 /* GraphViewModel.swift in Sources */,
+				38911A162A3A257800347B59 /* GraphView.swift in Sources */,
 				382B18102A3633E600E8DF4D /* Stocks_App.xcdatamodeld in Sources */,
 				382B18042A3633E500E8DF4D /* Stocks_AppApp.swift in Sources */,
+				38911A142A3A161700347B59 /* FinancialFormatting.swift in Sources */,
 				382B18372A3638F200E8DF4D /* StockService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +375,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -375,6 +408,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -389,7 +423,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -403,6 +437,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -435,6 +470,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -443,7 +479,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -469,6 +505,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -492,13 +529,21 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Stocks App/Preview Content\"";
 				DEVELOPMENT_TEAM = CS7P9L74D4;
 				ENABLE_PREVIEWS = YES;
-				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = "API_KEY=$(API_KEY)";
+				"GCC_PREPROCESSOR_DEFINITIONS[arch=*]" = (
+					TIME_SERIES_API_KEY,
+					"=",
+					"$(TIME_SERIES_API_KEY)",
+					FUNDAMENTALS_API_KEY,
+					"=",
+					"$(FUNDAMENTALS_API_KEY)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

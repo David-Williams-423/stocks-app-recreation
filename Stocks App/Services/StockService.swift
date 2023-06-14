@@ -8,9 +8,7 @@
 import Foundation
 
 class StockService {
-    init() {
-        if let API_KEY = ProcessInfo.processInfo.environment["API_KEY"] {
-            print("Success")
-        }
-    }
+    
+    private var TIME_SERIES_API_KEY: String? = ProcessInfo.processInfo.environment["TIME_SERIES_API_KEY"]
+    
 }

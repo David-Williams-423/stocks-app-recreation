@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 struct FinancialFormatting {
     public static func formatMarketCap(_ number: Int) -> String {
@@ -54,6 +55,13 @@ struct FinancialFormatting {
         }
         
         return formattedString
+    }
+    
+    static func getColor(quotes: [Quote]) -> Color {
+        guard let last = quotes.last?.close else { return .gray }
+        guard let first = quotes.first?.close else { return .gray }
+        
+        return last - first > 0 ? .green : .red
     }
 
 }
