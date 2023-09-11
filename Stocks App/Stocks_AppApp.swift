@@ -12,7 +12,7 @@ struct Stocks_AppApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
                 .preferredColorScheme(.dark)
         }
     }

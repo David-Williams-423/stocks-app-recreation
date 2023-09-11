@@ -8,11 +8,37 @@
 import SwiftUI
 
 struct DetailView: View {
+    var stock: Stock
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            HStack(alignment: .bottom) {
+                Text(stock.ticker)
+                    .font(.title).fontWeight(.heavy)
+                Text(stock.name)
+                    .font(.subheadline)
+                    .foregroundStyle(.gray)
+                    .padding(.bottom, 3)
+                Spacer()
+                Image(systemName: "ellipsis.circle.fill")
+                    .foregroundStyle(.blue, .quaternary)
+                    .font(.title)
+                Image(systemName: "xmark.circle.fill")
+                    .foregroundStyle(.gray, .quaternary)
+                    .font(.title)
+            }
+            .padding([.horizontal, .top])
+            Divider()
+            Spacer()
+            
+        }
     }
 }
 
 #Preview {
-    DetailView()
+    HomeView()
+        .sheet(isPresented: .constant(true)) {
+            DetailView(stock: Stock.example)
+                .preferredColorScheme(.dark)
+        }
+        .preferredColorScheme(.dark)
 }

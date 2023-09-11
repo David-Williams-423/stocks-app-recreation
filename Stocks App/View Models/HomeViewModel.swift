@@ -6,3 +6,36 @@
 //
 
 import Foundation
+
+class HomeViewModel: ObservableObject {
+    @Published var stocks: [Stock] = [Stock.randomQuotes()]
+    @Published var searchQuery = ""
+    @Published var secondaryInfo: SecondaryDailyInfo = .percentChange
+    @Published var detailViewPresented: Bool = false
+
+    var isSearching: Bool {
+        !searchQuery.isEmpty
+    }
+    var subtitle: String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "d MMMM"
+        let today = Date()
+        return dateFormatter.string(from: today)
+    }
+    var title = "Stocks"
+    
+    func deleteStock(at offsets: IndexSet) {
+        stocks.remove(atOffsets: offsets)
+    }
+    
+    func switchSecondaryInfo() {
+        switch self.secondaryInfo {
+        case .percentChange:
+            self.secondaryInfo = .priceChange
+        case .priceChange:
+            self.secondaryInfo = .marketCap
+        case .marketCap:
+            self.secondaryInfo = .percentChange
+        }
+    }
+}
