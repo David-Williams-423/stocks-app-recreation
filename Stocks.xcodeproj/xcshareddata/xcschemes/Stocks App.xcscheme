@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "382B17FF2A3633E500E8DF4D"
-               BuildableName = "Stocks App.app"
-               BlueprintName = "Stocks App"
-               ReferencedContainer = "container:Stocks App.xcodeproj">
+               BuildableName = "Stocks.app"
+               BlueprintName = "Stocks"
+               ReferencedContainer = "container:Stocks.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "382B18142A3633E600E8DF4D"
-               BuildableName = "Stocks AppTests.xctest"
-               BlueprintName = "Stocks AppTests"
-               ReferencedContainer = "container:Stocks App.xcodeproj">
+               BuildableName = "StocksTests.xctest"
+               BlueprintName = "StocksTests"
+               ReferencedContainer = "container:Stocks.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,9 +46,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "382B181E2A3633E600E8DF4D"
-               BuildableName = "Stocks AppUITests.xctest"
-               BlueprintName = "Stocks AppUITests"
-               ReferencedContainer = "container:Stocks App.xcodeproj">
+               BuildableName = "StocksUITests.xctest"
+               BlueprintName = "StocksUITests"
+               ReferencedContainer = "container:Stocks.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "382B17FF2A3633E500E8DF4D"
-            BuildableName = "Stocks App.app"
-            BlueprintName = "Stocks App"
-            ReferencedContainer = "container:Stocks App.xcodeproj">
+            BuildableName = "Stocks.app"
+            BlueprintName = "Stocks"
+            ReferencedContainer = "container:Stocks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -97,9 +97,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "382B17FF2A3633E500E8DF4D"
-            BuildableName = "Stocks App.app"
-            BlueprintName = "Stocks App"
-            ReferencedContainer = "container:Stocks App.xcodeproj">
+            BuildableName = "Stocks.app"
+            BlueprintName = "Stocks"
+            ReferencedContainer = "container:Stocks.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
