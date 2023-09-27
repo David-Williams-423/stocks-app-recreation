@@ -26,7 +26,7 @@ struct FinancialFormatting {
 
     }
     
-    public static func formatPrice(_ number: Double, lowerBound: Double, upperBound: Double, signed: Bool) -> String {
+    public static func formatPrice(_ number: Double, lowerBound: Double = 0.1, upperBound: Double = 999.99, signed: Bool = true) -> String {
         let absoluteNumber = abs(number) // Get the absolute value
 
         let numberFormatter = NumberFormatter()
@@ -57,7 +57,21 @@ struct FinancialFormatting {
         return formattedString
     }
     
-    static func getColor(quotes: [Quote]) -> Color {
+    public static func formatPercent(_ number: Double, decimalPlaces: Int = 2) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .percent
+        formatter.minimumFractionDigits = decimalPlaces
+        formatter.maximumFractionDigits = decimalPlaces
+        formatter.positivePrefix = formatter.plusSign   // Prefix positive numbers with the plus sign
+        
+        if let formattedString = formatter.string(from: NSNumber(value: number)) {
+            return formattedString
+        } else {
+            return "\(number)"
+        }
+    }
+    
+    public static func getColor(quotes: [Quote]) -> Color {
         guard let last = quotes.last?.close else { return .gray }
         guard let first = quotes.first?.close else { return .gray }
         

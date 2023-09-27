@@ -16,15 +16,15 @@ enum SecondaryDailyInfo {
         
         let previousClose = stock.intraDayQuotes.first!.close
         let currentPrice = stock.intraDayQuotes.last!.close
-        let percentChange = ((currentPrice - previousClose) / previousClose) * 100
+        let percentChange = ((currentPrice - previousClose) / previousClose)
         
         let priceChange = currentPrice - previousClose
         
         switch self {
         case .percentChange:
-            return String(format: "\(percentChange > 0 ? "+" : "")%.2f", percentChange) + "%"
+            return FinancialFormatting.formatPercent(percentChange)
         case .priceChange:
-            return FinancialFormatting.formatPrice(priceChange, lowerBound: 0.1, upperBound: 999.99, signed: true)
+            return FinancialFormatting.formatPrice(priceChange)
         case .marketCap:
             return FinancialFormatting.formatMarketCap(stock.fundamental.marketCap)
         }

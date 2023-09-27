@@ -11,14 +11,20 @@ struct Stock: Identifiable {
     var id = UUID()
     var ticker: String
     var name: String
+    var exchange: String = "NASDAQ"
+    var currency: String = "USD"
     var previousClose: Double {
         intraDayQuotes.first!.close
     }
     var price: Double {
         intraDayQuotes.last!.close
     }
+    var percentChange: Double {
+        (price - previousClose) / previousClose
+    }
     var intraDayQuotes: [Quote]
     var fundamental: FundamentalData
+    
 }
 
 struct Quote {

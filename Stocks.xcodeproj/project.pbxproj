@@ -12,9 +12,9 @@
 		382B18082A3633E600E8DF4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382B18072A3633E600E8DF4D /* Assets.xcassets */; };
 		382B180B2A3633E600E8DF4D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 382B180A2A3633E600E8DF4D /* Preview Assets.xcassets */; };
 		382B18102A3633E600E8DF4D /* Stocks_App.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 382B180E2A3633E600E8DF4D /* Stocks_App.xcdatamodeld */; };
-		382B181A2A3633E600E8DF4D /* Stocks_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18192A3633E600E8DF4D /* Stocks_AppTests.swift */; };
-		382B18242A3633E600E8DF4D /* Stocks_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18232A3633E600E8DF4D /* Stocks_AppUITests.swift */; };
-		382B18262A3633E600E8DF4D /* Stocks_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18252A3633E600E8DF4D /* Stocks_AppUITestsLaunchTests.swift */; };
+		382B181A2A3633E600E8DF4D /* StocksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18192A3633E600E8DF4D /* StocksTests.swift */; };
+		382B18242A3633E600E8DF4D /* StocksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18232A3633E600E8DF4D /* StocksUITests.swift */; };
+		382B18262A3633E600E8DF4D /* StocksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18252A3633E600E8DF4D /* StocksUITestsLaunchTests.swift */; };
 		382B18372A3638F200E8DF4D /* StockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382B18362A3638F200E8DF4D /* StockService.swift */; };
 		3882376C2A366D090019A86A /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882376B2A366D090019A86A /* CellView.swift */; };
 		3882376E2A3679440019A86A /* SecondaryDailyInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3882376D2A3679440019A86A /* SecondaryDailyInfo.swift */; };
@@ -52,10 +52,10 @@
 		382B180A2A3633E600E8DF4D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		382B180F2A3633E600E8DF4D /* Stocks_App.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Stocks_App.xcdatamodel; sourceTree = "<group>"; };
 		382B18152A3633E600E8DF4D /* StocksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		382B18192A3633E600E8DF4D /* Stocks_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks_AppTests.swift; sourceTree = "<group>"; };
+		382B18192A3633E600E8DF4D /* StocksTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksTests.swift; sourceTree = "<group>"; };
 		382B181F2A3633E600E8DF4D /* StocksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StocksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		382B18232A3633E600E8DF4D /* Stocks_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks_AppUITests.swift; sourceTree = "<group>"; };
-		382B18252A3633E600E8DF4D /* Stocks_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stocks_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		382B18232A3633E600E8DF4D /* StocksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksUITests.swift; sourceTree = "<group>"; };
+		382B18252A3633E600E8DF4D /* StocksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		382B18362A3638F200E8DF4D /* StockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockService.swift; sourceTree = "<group>"; };
 		3882376B2A366D090019A86A /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		3882376D2A3679440019A86A /* SecondaryDailyInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryDailyInfo.swift; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				382B18022A3633E500E8DF4D /* Stocks */,
-				382B18182A3633E600E8DF4D /* Stocks AppTests */,
-				382B18222A3633E600E8DF4D /* Stocks AppUITests */,
+				382B18182A3633E600E8DF4D /* StocksTests */,
+				382B18222A3633E600E8DF4D /* StocksUITests */,
 				382B18012A3633E500E8DF4D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -137,21 +137,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		382B18182A3633E600E8DF4D /* Stocks AppTests */ = {
+		382B18182A3633E600E8DF4D /* StocksTests */ = {
 			isa = PBXGroup;
 			children = (
-				382B18192A3633E600E8DF4D /* Stocks_AppTests.swift */,
+				382B18192A3633E600E8DF4D /* StocksTests.swift */,
 			);
-			path = "Stocks AppTests";
+			path = StocksTests;
 			sourceTree = "<group>";
 		};
-		382B18222A3633E600E8DF4D /* Stocks AppUITests */ = {
+		382B18222A3633E600E8DF4D /* StocksUITests */ = {
 			isa = PBXGroup;
 			children = (
-				382B18232A3633E600E8DF4D /* Stocks_AppUITests.swift */,
-				382B18252A3633E600E8DF4D /* Stocks_AppUITestsLaunchTests.swift */,
+				382B18232A3633E600E8DF4D /* StocksUITests.swift */,
+				382B18252A3633E600E8DF4D /* StocksUITestsLaunchTests.swift */,
 			);
-			path = "Stocks AppUITests";
+			path = StocksUITests;
 			sourceTree = "<group>";
 		};
 		382B18322A36352800E8DF4D /* Views */ = {
@@ -350,7 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				382B181A2A3633E600E8DF4D /* Stocks_AppTests.swift in Sources */,
+				382B181A2A3633E600E8DF4D /* StocksTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,8 +358,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				382B18242A3633E600E8DF4D /* Stocks_AppUITests.swift in Sources */,
-				382B18262A3633E600E8DF4D /* Stocks_AppUITestsLaunchTests.swift in Sources */,
+				382B18242A3633E600E8DF4D /* StocksUITests.swift in Sources */,
+				382B18262A3633E600E8DF4D /* StocksUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,12 +1,12 @@
 //
-//  Stocks_AppTests.swift
-//  Stocks AppTests
+//  StocksTests.swift
+//  StocksTests
 //
 //  Created by David Williams on 6/11/23.
 //
 
 import XCTest
-@testable import Stocks_App
+//@testable import Stocks
 
 final class Stocks_AppTests: XCTestCase {
 

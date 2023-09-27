@@ -1,5 +1,5 @@
 //
-//  Stocks_AppUITestsLaunchTests.swift
+//  StocksUITestsLaunchTests.swift
 //  Stocks AppUITests
 //
 //  Created by David Williams on 6/11/23.
@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class Stocks_AppUITestsLaunchTests: XCTestCase {
+final class StocksUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

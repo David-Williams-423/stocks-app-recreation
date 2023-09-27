@@ -1,5 +1,5 @@
 //
-//  Stocks_AppUITests.swift
+//  StocksUITests.swift
 //  Stocks AppUITests
 //
 //  Created by David Williams on 6/11/23.
@@ -7,7 +7,7 @@
 
 import XCTest
 
-final class Stocks_AppUITests: XCTestCase {
+final class StocksUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

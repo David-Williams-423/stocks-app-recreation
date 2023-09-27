@@ -11,6 +11,17 @@ struct DetailView: View {
     var stock: Stock
     var body: some View {
         VStack {
+            header
+            
+            currentPrice
+                .padding(.horizontal)
+            Divider()
+            Spacer()
+        }
+    }
+
+    private var header: some View {
+        VStack(spacing: 10) {
             HStack(alignment: .bottom) {
                 Text(stock.ticker)
                     .font(.title).fontWeight(.heavy)
@@ -28,8 +39,30 @@ struct DetailView: View {
             }
             .padding([.horizontal, .top])
             Divider()
+        }
+    }
+
+    private var currentPrice: some View {
+        HStack {
+            VStack(alignment: .leading) {
+                HStack {
+                    let color = FinancialFormatting.getColor(quotes: stock.intraDayQuotes)
+
+                    Text(FinancialFormatting.formatPrice(stock.price, signed: false))
+                        .bold()
+                        .padding(.trailing)
+
+                    Text(FinancialFormatting.formatPercent(stock.percentChange))
+                        .foregroundStyle(color)
+                }
+                HStack {
+                    Text(stock.exchange + " ‧ " + stock.currency)
+                        .font(.footnote)
+                        .fontWeight(.semibold)
+                        .foregroundStyle(.gray)
+                }
+            }
             Spacer()
-            
         }
     }
 }
