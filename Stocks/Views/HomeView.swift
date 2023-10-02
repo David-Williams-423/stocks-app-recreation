@@ -11,14 +11,12 @@ struct HomeView: View {
     @StateObject var vm = HomeViewModel()
     @State var isPresented: Bool = false
     @State var secondaryInfo: SecondaryDailyInfo = .percentChange
+
     var body: some View {
         NavigationStack {
             List {
                 ForEach(vm.stocks) { stock in
                     CellView(vm: vm, stock: stock)
-                        .sheet(isPresented: $vm.detailViewPresented) {
-                            DetailView(stock: stock)
-                        }
                 }
                 .onDelete { indexSet in
                     vm.deleteStock(at: indexSet)
@@ -36,7 +34,9 @@ struct HomeView: View {
                     }
                 }
             }
-            
+        }
+        .sheet(item: $vm.selectedStock) { stock in
+            DetailView(vm: DetailViewModel(stock: stock))
         }
     }
 

@@ -17,6 +17,4 @@ class CellViewModel: ObservableObject {
     init(stock: Stock) {
         self.stock = stock
     }
-    
-    
 }

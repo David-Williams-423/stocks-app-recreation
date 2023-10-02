@@ -6,7 +6,7 @@
 //
 
 import XCTest
-//@testable import Stocks
+@testable import Stocks
 
 final class Stocks_AppTests: XCTestCase {
 

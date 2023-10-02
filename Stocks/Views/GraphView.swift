@@ -16,7 +16,6 @@ struct GraphView: View {
             chart
                 .chartXAxis(.hidden)
                 .chartYAxis(.hidden)
-                
 
         } else {
             chart
@@ -39,12 +38,10 @@ struct GraphView: View {
                     .foregroundStyle(LinearGradient(gradient: Gradient(colors: [graphColor, graphColor.opacity(0.01)]), startPoint: .top, endPoint: .bottom).opacity(0.8))
                 if vm.thumbnail {
                     RuleMark(
-                        
                         y: .value("Price", previousClose)
                     )
                     .lineStyle(.init(lineWidth: 1, dash: [4, 2]))
                     .foregroundStyle(graphColor)
-
                 }
             }
         }
@@ -75,5 +72,6 @@ struct GraphView: View {
 }
 
 #Preview {
-    GraphView(vm: GraphViewModel(quotes: Quote.generateQuotes(startPrice: 420.0), thumbnail: true))
+    GraphView(vm: GraphViewModel(quotes: Quote.generateQuotes(startPrice: 420.0), thumbnail: false))
+        .frame(height: 200)
 }

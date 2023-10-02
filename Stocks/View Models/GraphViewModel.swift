@@ -24,6 +24,4 @@ class GraphViewModel: ObservableObject {
         self.quotes = quotes
         self.thumbnail = thumbnail
     }
-    
-    
 }

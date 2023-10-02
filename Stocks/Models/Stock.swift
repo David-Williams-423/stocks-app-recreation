@@ -16,15 +16,17 @@ struct Stock: Identifiable {
     var previousClose: Double {
         intraDayQuotes.first!.close
     }
+
     var price: Double {
         intraDayQuotes.last!.close
     }
+
     var percentChange: Double {
         (price - previousClose) / previousClose
     }
+
     var intraDayQuotes: [Quote]
     var fundamental: FundamentalData
-    
 }
 
 struct Quote {
@@ -42,18 +44,17 @@ struct FundamentalData {
     var marketCap: Int
     var yearHigh: Double
     var yearLow: Double
-    var avgVolume: Double
+    var avgVolume: Int
     var yield: Double
     var beta: Double
     var EPS: Double
 }
 
 extension Stock {
-    
     static func randomQuotes() -> Stock {
-         Stock(ticker: "NVDA", name: "NVIDIA Corporation", intraDayQuotes: Quote.generateQuotes(startPrice: 429.97), fundamental: FundamentalData.example)
+        Stock(ticker: "NVDA", name: "NVIDIA Corporation", intraDayQuotes: Quote.generateQuotes(startPrice: 429.97), fundamental: FundamentalData.example)
     }
-    
+
     static var example: Stock = .init(ticker: "NVDA", name: "NVIDIA Corporation", intraDayQuotes: Quote.generateQuotes(startPrice: 429.97), fundamental: FundamentalData.example)
 }
 
@@ -99,7 +100,7 @@ extension Quote {
         }
         return minClose * 0.99 ... maxClose * 1.01
     }
-    
+
     static func min(_ quotes: [Quote]) -> Double {
         var minClose = quotes.first!.close
         for quote in quotes {
@@ -109,7 +110,7 @@ extension Quote {
         }
         return minClose
     }
-    
+
     static func max(_ quotes: [Quote]) -> Double {
         var maxClose = quotes.first!.close
         for quote in quotes {

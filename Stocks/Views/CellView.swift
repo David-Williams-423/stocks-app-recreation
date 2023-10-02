@@ -30,7 +30,7 @@ struct CellView: View {
                 }
             }
             .onTapGesture {
-                vm.detailViewPresented = true
+                vm.selectedStock = stock
             }
 
             rightSide
@@ -94,7 +94,6 @@ struct CellView: View {
 }
 
 struct CellView_Previews: PreviewProvider {
-    
     static var vm = HomeViewModel()
     static var previews: some View {
         CellView(vm: vm, stock: Stock.example)

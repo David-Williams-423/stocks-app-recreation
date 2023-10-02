@@ -8,7 +8,5 @@
 import Foundation
 
 class StockService {
-    
     private var TIME_SERIES_API_KEY: String? = ProcessInfo.processInfo.environment["TIME_SERIES_API_KEY"]
-    
 }

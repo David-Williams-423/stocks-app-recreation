@@ -13,7 +13,6 @@ enum SecondaryDailyInfo {
     case marketCap
     
     public func get(stock: Stock) -> String {
-        
         let previousClose = stock.intraDayQuotes.first!.close
         let currentPrice = stock.intraDayQuotes.last!.close
         let percentChange = ((currentPrice - previousClose) / previousClose)
@@ -26,9 +25,7 @@ enum SecondaryDailyInfo {
         case .priceChange:
             return FinancialFormatting.formatPrice(priceChange)
         case .marketCap:
-            return FinancialFormatting.formatMarketCap(stock.fundamental.marketCap)
+            return FinancialFormatting.formatLargeNumber(stock.fundamental.marketCap)
         }
     }
-    
-    
 }
