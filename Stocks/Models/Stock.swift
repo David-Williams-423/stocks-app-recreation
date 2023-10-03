@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// Needed calls: Search, Company Overview, Intraday (adjusted), TimeSeries (adjusted) [Daily, 5-Day, Monthly]
+
 struct Stock: Identifiable {
     var id = UUID()
     var ticker: String

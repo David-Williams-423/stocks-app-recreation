@@ -28,7 +28,16 @@ struct HomeView: View {
                 titleBar
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
-                        vm.stocks.append(Stock.randomQuotes())
+                        //vm.stocks.append(Stock.randomQuotes())
+                        Task {
+                            do {
+                                print("working")
+                                let overview = try await StockService.fetchCompanyOverview()
+                                print(overview.name)
+                            } catch {
+                                print("Error fetching intraday quotes: \(error)")
+                            }
+                        }
                     } label: {
                         Image(systemName: "plus.circle.fill")
                     }
